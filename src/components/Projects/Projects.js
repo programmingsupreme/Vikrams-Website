@@ -4,8 +4,6 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import getMeGas from "../../Assets/Projects/getmegas.svg";
 import aiTwin from "../../Assets/Projects/aitwin.svg";
-import lstmStock from "../../Assets/Projects/lstmstock.svg";
-import cnnClassifier from "../../Assets/Projects/cnnclassifier.svg";
 
 function Projects() {
   return (
@@ -39,25 +37,6 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={lstmStock}
-              isBlog={false}
-              title="Stock Price Forecasting (LSTM)"
-              description="A financial time-series analysis notebook using an LSTM model to forecast GE and TXN stock prices, built with pandas and PyTorch."
-              ghLink="https://github.com/programmingsupreme"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={cnnClassifier}
-              isBlog={false}
-              title="Pokémon vs. Digimon Classifier"
-              description="A convolutional neural network trained to distinguish Pokémon from Digimon character art, achieving strong test accuracy."
-              ghLink="https://github.com/programmingsupreme"
-            />
-          </Col>
         </Row>
       </Container>
     </Container>
