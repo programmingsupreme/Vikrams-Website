@@ -34,6 +34,7 @@ function Projects() {
               title="AI Digital Twin — Conversational Career Agent"
               description="A chatbot that answers prospective-employer questions about my background. Uses a two-model guardrail pipeline (a second LLM, xAI Grok, reviews every response for professionalism and triggers a self-correcting regeneration loop), OpenAI function calling to capture visitor contact info and log unanswerable questions with real-time Pushover notifications, and a structured system prompt to reduce hallucinated claims."
               ghLink="https://github.com/programmingsupreme/Digital-Twin-AI-Assistant"
+              demoLink="https://viknad-vikrams-digital-twin.hf.space"
             />
           </Col>
 
