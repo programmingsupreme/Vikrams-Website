@@ -34,7 +34,15 @@ function Home2() {
               Google Cloud Run, and built an{" "}
               <b className="purple">AI Digital Twin</b> — a conversational
               agent with a self-correcting guardrail pipeline that answers
-              questions about my background.
+              questions about my background.{" "}
+              <a
+                href="https://viknad-vikrams-digital-twin.hf.space"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="purple"
+              >
+                Talk to it here →
+              </a>
               <br />
               <br />
               I'm actively looking for a{" "}
