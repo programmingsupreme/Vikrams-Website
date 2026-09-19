@@ -31,7 +31,15 @@ function AboutCard() {
               <ImPointRight /> Building full-stack and mobile apps end-to-end
             </li>
             <li className="about-activity">
-              <ImPointRight /> Experimenting with AI/ML and agentic systems
+              <ImPointRight /> Building agentic AI systems — including a{" "}
+              <a
+                href="https://viknad-vikrams-digital-twin.hf.space"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="purple"
+              >
+                deployed conversational agent
+              </a>
             </li>
             <li className="about-activity">
               <ImPointRight /> Learning new frameworks and tools
