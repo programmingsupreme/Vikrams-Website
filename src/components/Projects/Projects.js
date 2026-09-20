@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import getMeGas from "../../Assets/Projects/getmegas.svg";
 import aiTwin from "../../Assets/Projects/aitwin.svg";
+import neondo from "../../Assets/Projects/neondo.png";
 
 function Projects() {
   return (
@@ -35,6 +36,16 @@ function Projects() {
               description="A chatbot that answers prospective-employer questions about my background. Uses a two-model guardrail pipeline (a second LLM, xAI Grok, reviews every response for professionalism and triggers a self-correcting regeneration loop), OpenAI function calling to capture visitor contact info and log unanswerable questions with real-time Pushover notifications, and a structured system prompt to reduce hallucinated claims."
               ghLink="https://github.com/programmingsupreme/Digital-Twin-AI-Assistant"
               demoLink="https://viknad-vikrams-digital-twin.hf.space"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={neondo}
+              isBlog={false}
+              title="Neondo — Gamified To-Do Web App"
+              description="A multi-user Django web app where each account manages its own private to-do list. AI quick-add turns a plain-English note like 'call mom tomorrow at 5pm' into a structured task with a due date and category, backed by a pluggable provider layer (OpenAI, Google Gemini, or a key-free local GGUF model via llama-cpp-python) that degrades gracefully when no key is configured. Completing tasks earns points spendable in a theme shop that swaps the site-wide stylesheet at runtime. Includes per-user API key management, Google OAuth sign-in, password reset, and a 128-test suite covering cross-user access isolation and all three AI providers."
+              ghLink="https://github.com/programmingsupreme/neondo"
             />
           </Col>
 
