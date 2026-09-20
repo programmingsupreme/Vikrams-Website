@@ -5,6 +5,8 @@ import Particle from "../Particle";
 import getMeGas from "../../Assets/Projects/getmegas.svg";
 import aiTwin from "../../Assets/Projects/aitwin.svg";
 import neondo from "../../Assets/Projects/neondo.png";
+import cs50filter from "../../Assets/Projects/cs50filter.svg";
+import cs50tideman from "../../Assets/Projects/cs50tideman.svg";
 
 function Projects() {
   return (
@@ -49,6 +51,35 @@ function Projects() {
             />
           </Col>
 
+        </Row>
+
+        <h1 className="project-heading" style={{ paddingTop: "30px" }}>
+          CS50 <strong className="purple">Coursework</strong>
+        </h1>
+        <p style={{ color: "white" }}>
+          Low-level C problem sets from Harvard's CS50x, written without any
+          external libraries.
+        </p>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={cs50filter}
+              isBlog={false}
+              title="Filter — Image Filters in C"
+              description="Command-line tool that loads a 24-bit uncompressed BMP into memory, applies a filter, and writes out a new file. Implements grayscale, sepia, horizontal reflection, and box blur by manipulating raw RGB pixel data directly — no image libraries — including the edge-case handling for blurring pixels along the borders. CS50x Problem Set 4 (less comfortable)."
+              ghLink="https://github.com/programmingsupreme/filter-less"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={cs50tideman}
+              isBlog={false}
+              title="Tideman Voting System"
+              description="Implementation of the Tideman (ranked pairs) election method in C, which finds the Condorcet winner — the candidate who beats every other head-to-head — whenever one exists. Collects ranked ballots for up to 9 candidates, builds a pairwise preference matrix, sorts victory margins strongest to weakest, and locks pairs into a directed graph using recursive cycle detection so no lock creates a loop. CS50x Problem Set 3."
+              ghLink="https://github.com/programmingsupreme/Tideman-Voting-System"
+            />
+          </Col>
         </Row>
       </Container>
     </Container>
